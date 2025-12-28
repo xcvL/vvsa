@@ -22,9 +22,23 @@ html, body {
 p {
         font-size: 2em;
         color: white;
+}
+
+/* Mobile Styles */
+@media (max-width: 1023px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
-@media (hover: hover) and (pointer: fine) {
+    #notification, #dpr, #alphabet-container, .alphabet, .cell {
+        display: none;
+    }
+}
+
+/* Desktop Styles */
+@media (min-width: 1024px) {
     body {
         display: flex;
         flex-direction: column;
@@ -209,18 +223,6 @@ p {
     #z-5 { background-color: var(--white); }
 
     #mobile {
-        display: none;
-    }
-}
-
-@media (hover: none) and (pointer: coarse) {
-    body {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    #notification, #dpr, #alphabet-container, .alphabet, .cell {
         display: none;
     }
 }

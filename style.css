@@ -19,17 +19,17 @@ html, body {
     background-color: #000;
 }
 
-p {
-        font-size: 2em;
-        color: white;
-}
-
 /* Mobile Styles */
 @media (max-width: 1023px) {
     body {
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+
+    #mobile {
+        font-size: 2em;
+        color: white;
     }
 
     #notification, #dpr, #alphabet-container, .alphabet, .cell {
@@ -44,6 +44,11 @@ p {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+
+    #pc {
+        font-size: 2em;
+        color: white;
     }
 
     #alphabet-container {

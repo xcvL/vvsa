@@ -4,205 +4,223 @@
     --blue: #0000FF;
     --yellow: #FFFF00;
     --cyan: #00FFFF;
-    --magenta: #FF00FF;
+    --magenta:#FF00FF;
     --white: #FFFFFF;
     --width: 1px;
     --height: calc(var(--width) * 5);
-    --dpr: 1px;
 }
 
 html, body {
+    width: 100%;
+    height: 100%;
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
     background-color: #000;
 }
 
-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
 p {
-    font-size: 2em;
-    color: white;
+        font-size: 2em;
+        color: white;
+    }
+
+@media (hover: hover) and (pointer: fine) {
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #alphabet-container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .alphabet {
+        width: 1px;
+        height: 5px;
+        margin-right: 1px;
+    }
+
+    .cell {
+        width: var(--width);
+        height: var(--width);
+    }
+
+    .alphabet { width: var(--width); height: var(--height); }
+    #a-1 { background-color: var(--yellow); }
+    #a-2 { background-color: var(--magenta); }
+    #a-3 { background-color: var(--white); }
+    #a-4 { background-color: var(--magenta); }
+    #a-5 { background-color: var(--magenta); }
+
+    #b-1 { background-color: var(--yellow); }
+    #b-2 { background-color: var(--magenta); }
+    #b-3 { background-color: var(--yellow); }
+    #b-4 { background-color: var(--magenta); }
+    #b-5 { background-color: var(--white); }
+
+    #c-1 { background-color: var(--white); }
+    #c-2 { background-color: var(--red); }
+    #c-3 { background-color: var(--red); }
+    #c-4 { background-color: var(--red); }
+    #c-5 { background-color: var(--white); }
+
+    #d-1 { background-color: var(--yellow); }
+    #d-2 { background-color: var(--magenta); }
+    #d-3 { background-color: var(--magenta); }
+    #d-4 { background-color: var(--magenta); }
+    #d-5 { background-color: var(--yellow); }
+
+    #e-1 { background-color: var(--white); }
+    #e-2 { background-color: var(--red); }
+    #e-3 { background-color: var(--yellow); }
+    #e-4 { background-color: var(--red); }
+    #e-5 { background-color: var(--white); }
+
+    #f-1 { background-color: var(--white); }
+    #f-2 { background-color: var(--red); }
+    #f-3 { background-color: var(--yellow); }
+    #f-4 { background-color: var(--red); }
+    #f-5 { background-color: var(--red); }
+
+    #g-1 { background-color: var(--cyan); }
+    #g-2 { background-color: var(--red); }
+    #g-3 { background-color: var(--red); }
+    #g-4 { background-color: var(--magenta); }
+    #g-5 { background-color: var(--cyan); }
+
+    #h-1 { background-color: var(--magenta); }
+    #h-2 { background-color: var(--magenta); }
+    #h-3 { background-color: var(--white); }
+    #h-4 { background-color: var(--magenta); }
+    #h-5 { background-color: var(--magenta); }
+
+    #i-1 { background-color: var(--green); }
+    #i-2 { background-color: var(--green); }
+    #i-3 { background-color: var(--green); }
+    #i-4 { background-color: var(--green); }
+    #i-5 { background-color: var(--green); }
+
+    #j-1 { background-color: var(--cyan); }
+    #j-2 { background-color: var(--blue); }
+    #j-3 { background-color: var(--blue); }
+    #j-4 { background-color: var(--magenta); }
+    #j-5 { background-color: var(--white); }
+
+    #k-1 { background-color: var(--magenta); }
+    #k-2 { background-color: var(--magenta); }
+    #k-3 { background-color: var(--yellow); }
+    #k-4 { background-color: var(--magenta); }
+    #k-5 { background-color: var(--magenta); }
+
+    #l-1 { background-color: var(--red); }
+    #l-2 { background-color: var(--red); }
+    #l-3 { background-color: var(--red); }
+    #l-4 { background-color: var(--red); }
+    #l-5 { background-color: var(--white); }
+
+    #m-1 { background-color: var(--magenta); }
+    #m-2 { background-color: var(--white); }
+    #m-3 { background-color: var(--magenta); }
+    #m-4 { background-color: var(--magenta); }
+    #m-5 { background-color: var(--magenta); }
+
+    #n-1 { background-color: var(--yellow); }
+    #n-2 { background-color: var(--magenta); }
+    #n-3 { background-color: var(--magenta); }
+    #n-4 { background-color: var(--magenta); }
+    #n-5 { background-color: var(--magenta); }
+
+    #o-1 { background-color: var(--white); }
+    #o-2 { background-color: var(--magenta); }
+    #o-3 { background-color: var(--magenta); }
+    #o-4 { background-color: var(--magenta); }
+    #o-5 { background-color: var(--white); }
+
+    #p-1 { background-color: var(--yellow); }
+    #p-2 { background-color: var(--magenta); }
+    #p-3 { background-color: var(--white); }
+    #p-4 { background-color: var(--red); }
+    #p-5 { background-color: var(--red); }
+
+    #q-1 { background-color: var(--white); }
+    #q-2 { background-color: var(--magenta); }
+    #q-3 { background-color: var(--magenta); }
+    #q-4 { background-color: var(--yellow); }
+    #q-5 { background-color: var(--blue); }
+
+    #r-1 { background-color: var(--yellow); }
+    #r-2 { background-color: var(--magenta); }
+    #r-3 { background-color: var(--yellow); }
+    #r-4 { background-color: var(--magenta); }
+    #r-5 { background-color: var(--magenta); }
+
+    #s-1 { background-color: var(--cyan); }
+    #s-2 { background-color: var(--red); }
+    #s-3 { background-color: var(--green); }
+    #s-4 { background-color: var(--blue); }
+    #s-5 { background-color: var(--yellow); }
+
+    #t-1 { background-color: var(--white); }
+    #t-2 { background-color: var(--green); }
+    #t-3 { background-color: var(--green); }
+    #t-4 { background-color: var(--green); }
+    #t-5 { background-color: var(--green); }
+
+    #u-1 { background-color: var(--magenta); }
+    #u-2 { background-color: var(--magenta); }
+    #u-3 { background-color: var(--magenta); }
+    #u-4 { background-color: var(--magenta); }
+    #u-5 { background-color: var(--white); }
+
+    #v-1 { background-color: var(--magenta); }
+    #v-2 { background-color: var(--magenta); }
+    #v-3 { background-color: var(--magenta); }
+    #v-4 { background-color: var(--magenta); }
+    #v-5 { background-color: var(--green); }
+
+    #w-1 { background-color: var(--magenta); }
+    #w-2 { background-color: var(--magenta); }
+    #w-3 { background-color: var(--magenta); }
+    #w-4 { background-color: var(--white); }
+    #w-5 { background-color: var(--magenta); }
+
+    #x-1 { background-color: var(--magenta); }
+    #x-2 { background-color: var(--magenta); }
+    #x-3 { background-color: var(--green); }
+    #x-4 { background-color: var(--magenta); }
+    #x-5 { background-color: var(--magenta); }
+
+    #y-1 { background-color: var(--magenta); }
+    #y-2 { background-color: var(--magenta); }
+    #y-3 { background-color: var(--white); }
+    #y-4 { background-color: var(--green); }
+    #y-5 { background-color: var(--green); }
+
+    #z-1 { background-color: var(--white); }
+    #z-2 { background-color: var(--blue); }
+    #z-3 { background-color: var(--green); }
+    #z-4 { background-color: var(--red); }
+    #z-5 { background-color: var(--white); }
+
+    #mobile {
+        display: none;
+    }
 }
 
-#alphabet-container {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+@media (hover: none) and (pointer: coarse) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #notification, #dpr, #alphabet-container, .alphabet, .cell {
+        display: none;
+    }
 }
-
-.alphabet {
-    width: 1px;
-    height: 5px;
-    margin-right: 1px;
-}
-
-.cell {
-    width: var(--width);
-    height: var(--width);
-}
-
-.alphabet { width: var(--width); height: var(--height); }
-
-#a-1 { background-color: var(--yellow); }
-#a-2 { background-color: var(--magenta); }
-#a-3 { background-color: var(--white); }
-#a-4 { background-color: var(--magenta); }
-#a-5 { background-color: var(--magenta); }
-
-#b-1 { background-color: var(--yellow); }
-#b-2 { background-color: var(--magenta); }
-#b-3 { background-color: var(--yellow); }
-#b-4 { background-color: var(--magenta); }
-#b-5 { background-color: var(--white); }
-
-#c-1 { background-color: var(--white); }
-#c-2 { background-color: var(--red); }
-#c-3 { background-color: var(--red); }
-#c-4 { background-color: var(--red); }
-#c-5 { background-color: var(--white); }
-
-#d-1 { background-color: var(--yellow); }
-#d-2 { background-color: var(--magenta); }
-#d-3 { background-color: var(--magenta); }
-#d-4 { background-color: var(--magenta); }
-#d-5 { background-color: var(--yellow); }
-
-#e-1 { background-color: var(--white); }
-#e-2 { background-color: var(--red); }
-#e-3 { background-color: var(--yellow); }
-#e-4 { background-color: var(--red); }
-#e-5 { background-color: var(--white); }
-
-#f-1 { background-color: var(--white); }
-#f-2 { background-color: var(--red); }
-#f-3 { background-color: var(--yellow); }
-#f-4 { background-color: var(--red); }
-#f-5 { background-color: var(--red); }
-
-#g-1 { background-color: var(--cyan); }
-#g-2 { background-color: var(--red); }
-#g-3 { background-color: var(--red); }
-#g-4 { background-color: var(--magenta); }
-#g-5 { background-color: var(--cyan); }
-
-#h-1 { background-color: var(--magenta); }
-#h-2 { background-color: var(--magenta); }
-#h-3 { background-color: var(--white); }
-#h-4 { background-color: var(--magenta); }
-#h-5 { background-color: var(--magenta); }
-
-#i-1 { background-color: var(--green); }
-#i-2 { background-color: var(--green); }
-#i-3 { background-color: var(--green); }
-#i-4 { background-color: var(--green); }
-#i-5 { background-color: var(--green); }
-
-#j-1 { background-color: var(--cyan); }
-#j-2 { background-color: var(--blue); }
-#j-3 { background-color: var(--blue); }
-#j-4 { background-color: var(--magenta); }
-#j-5 { background-color: var(--white); }
-
-#k-1 { background-color: var(--magenta); }
-#k-2 { background-color: var(--magenta); }
-#k-3 { background-color: var(--yellow); }
-#k-4 { background-color: var(--magenta); }
-#k-5 { background-color: var(--magenta); }
-
-#l-1 { background-color: var(--red); }
-#l-2 { background-color: var(--red); }
-#l-3 { background-color: var(--red); }
-#l-4 { background-color: var(--red); }
-#l-5 { background-color: var(--white); }
-
-#m-1 { background-color: var(--magenta); }
-#m-2 { background-color: var(--white); }
-#m-3 { background-color: var(--magenta); }
-#m-4 { background-color: var(--magenta); }
-#m-5 { background-color: var(--magenta); }
-
-#n-1 { background-color: var(--yellow); }
-#n-2 { background-color: var(--magenta); }
-#n-3 { background-color: var(--magenta); }
-#n-4 { background-color: var(--magenta); }
-#n-5 { background-color: var(--magenta); }
-
-#o-1 { background-color: var(--white); }
-#o-2 { background-color: var(--magenta); }
-#o-3 { background-color: var(--magenta); }
-#o-4 { background-color: var(--magenta); }
-#o-5 { background-color: var(--white); }
-
-#p-1 { background-color: var(--yellow); }
-#p-2 { background-color: var(--magenta); }
-#p-3 { background-color: var(--white); }
-#p-4 { background-color: var(--red); }
-#p-5 { background-color: var(--red); }
-
-#q-1 { background-color: var(--white); }
-#q-2 { background-color: var(--magenta); }
-#q-3 { background-color: var(--magenta); }
-#q-4 { background-color: var(--yellow); }
-#q-5 { background-color: var(--blue); }
-
-#r-1 { background-color: var(--yellow); }
-#r-2 { background-color: var(--magenta); }
-#r-3 { background-color: var(--yellow); }
-#r-4 { background-color: var(--magenta); }
-#r-5 { background-color: var(--magenta); }
-
-#s-1 { background-color: var(--cyan); }
-#s-2 { background-color: var(--red); }
-#s-3 { background-color: var(--green); }
-#s-4 { background-color: var(--blue); }
-#s-5 { background-color: var(--yellow); }
-
-#t-1 { background-color: var(--white); }
-#t-2 { background-color: var(--green); }
-#t-3 { background-color: var(--green); }
-#t-4 { background-color: var(--green); }
-#t-5 { background-color: var(--green); }
-
-#u-1 { background-color: var(--magenta); }
-#u-2 { background-color: var(--magenta); }
-#u-3 { background-color: var(--magenta); }
-#u-4 { background-color: var(--magenta); }
-#u-5 { background-color: var(--white); }
-
-#v-1 { background-color: var(--magenta); }
-#v-2 { background-color: var(--magenta); }
-#v-3 { background-color: var(--magenta); }
-#v-4 { background-color: var(--magenta); }
-#v-5 { background-color: var(--green); }
-
-#w-1 { background-color: var(--magenta); }
-#w-2 { background-color: var(--magenta); }
-#w-3 { background-color: var(--magenta); }
-#w-4 { background-color: var(--white); }
-#w-5 { background-color: var(--magenta); }
-
-#x-1 { background-color: var(--magenta); }
-#x-2 { background-color: var(--magenta); }
-#x-3 { background-color: var(--green); }
-#x-4 { background-color: var(--magenta); }
-#x-5 { background-color: var(--magenta); }
-
-#y-1 { background-color: var(--magenta); }
-#y-2 { background-color: var(--magenta); }
-#y-3 { background-color: var(--white); }
-#y-4 { background-color: var(--green); }
-#y-5 { background-color: var(--green); }
-
-#z-1 { background-color: var(--white); }
-#z-2 { background-color: var(--blue); }
-#z-3 { background-color: var(--green); }
-#z-4 { background-color: var(--red); }
-#z-5 { background-color: var(--white); }
